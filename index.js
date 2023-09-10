@@ -1,7 +1,7 @@
 window.document.onkeydown = (e) => {
   	if (e.keyCode === 13) {
         let element = document.getElementById("answer");
-        if (element.value.toLowerCase() === "kst"){
+        if (element.value.toLowerCase() === "kst"){ //見なかったことにして謎を解いてね
             alert("success");
         }
 	}  
