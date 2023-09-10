@@ -50,11 +50,11 @@ body {
 }
 
 .check_button {
-    margin-top: 20px;
-    font-size: 56px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    font-size: 55px;
     border: 0;
-    background-color: black;
-    vertical-align: middle;
     color: white;
     cursor: pointer;
     font-family: "超極細ゴシック";
