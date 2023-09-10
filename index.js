@@ -9,7 +9,7 @@ window.document.onkeydown = (e) => {
 
 const check_word = () => {
     let element = document.getElementById("answer");
-    if (element.value.toLowerCase() === "kst"){
+    if (element.value.toLowerCase() === "kst"){ //見なかったことにして謎を解いてね
         alert("success");
     }
 }
