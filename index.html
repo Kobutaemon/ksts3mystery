@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <title>M Y S T E R Y</title>
 </head>
 <body>
-    <div class="pic">
-        <img src="mystery_scr.png" class="mystery">
-        <img src="arrow.png" class="arrow">
+    <div id="finish-pic" class="d-none">
+        <li><img src="./src/finish1a.png" id="finish1a"></li>
+        <li><img src="./src/finish1b.png" id="finish1b"></li>
+    </div>
+    <div class="pic"> 
+        <img src="./src/mystery_scr.png" class="mystery">
+        <img src="./src/arrow.png" class="arrow">
     </div>
     <div class="text">
         <input type="text" placeholder="パスコード入力欄" id="answer">
