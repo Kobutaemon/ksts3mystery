@@ -59,3 +59,11 @@ body {
     cursor: pointer;
     font-family: "超極細ゴシック";
 }
+
+.d-none {
+    display: none;
+}
+
+#message {
+    color: rgb(255, 110, 110);
+}
