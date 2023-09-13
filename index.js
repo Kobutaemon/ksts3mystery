@@ -1,42 +1,54 @@
 let element = document.getElementById("answer");
 let message = document.getElementById("message");
+let finishPic = document.getElementById("finish-pic");
+let finish1a = document.getElementById("finish1a");
 
 function messageError() {
   message.classList.remove("d-none");
   message.innerText = "認証失敗";
   setTimeout(function() {
     message.classList.add("d-none");
-  }, 4000);
+  }, 3000);
 }
 
 window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
-    switch (element.value.toLowerCase()) {
-      case "kst":
-        alert("success");
-        break;
+    switch (element.value.toLowerCase().replace(".","")) {
+        case "kst":
+            alert("kst");
+            break;
 
-      case "drp":
-        alert("success");
-        break;
+        case "drp":
+            finishPic.style.zIndex = "1";
+            $(".pic .text").css("z-index", "-1")
+            $("#finish-pic").fadeIn("1500");
+            $(function(){
+                $("#finish-pic").bxSlider({
+                    infiniteLoop: false,
+                    pager: false
+                })
+            });
+            break;
 
-      default:
-        messageError();
+        default:
+            messageError();
+            break;
     }
   }  
 }
 
 function check_word() {
-  switch (element.value.toLowerCase()) {
-    case "kst":
-      alert("success");
-      break;
+    switch (element.value.toLowerCase().replace(".","")) {
+        case "kst":
+            alert("kst");
+            break;
 
-    case "drp":
-      alert("success");
-      break;
+        case "drp":
+            alert("drp");
+            break;
 
-    default:
-      messageError();
+        default:
+            messageError();
+            break;
   }
 }  
