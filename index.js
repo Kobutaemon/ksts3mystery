@@ -15,24 +15,24 @@ window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
     switch (element.value.toLowerCase().replace(".","")) {
         case "kst":
-            alert("kst");
-            break;
+          alert("kst");
+          break;
 
         case "drp":
-            finishPic.style.zIndex = "1";
-            $(".pic .text").css("z-index", "-1")
-            $("#finish-pic").fadeIn("1500");
-            $(function(){
-                $("#finish-pic").bxSlider({
-                    infiniteLoop: false,
-                    pager: false
-                })
+          $(document).ready(function() {
+            $("#finish-pic").fadeIn(1000, function() {
+              $("#finish-pic").bxSlider({
+                auto: false,
+                infiniteLoop: false,
+                pager: false
+              });
             });
-            break;
+          })
+          break;
 
         default:
-            messageError();
-            break;
+          messageError();
+          break;
     }
   }  
 }
