@@ -1,6 +1,6 @@
 @font-face {
     font-family: "超極細ゴシック";
-    src: url(./chogokubosogothic_5.ttf) format("truetype");
+    src: url(./src/chogokubosogothic_5.ttf) format("truetype");
 }
 
 body {
@@ -9,32 +9,12 @@ body {
 }
 
 #finish-pic {
-    position: flex;
-    right: 0;
-    top: 0;
-    z-index: -1;
-}
-
-#finish-pic li {
-    width: 100%;
+    display: none;
     position: relative;
-    height: 800px;
-}
-
-#finish-pic img {
-    position: absolute;
-    top: 90%;
-    bottom: 0;
-    display: block;
-    margin: auto 0;
 }
 
 .pic {
     text-align: center;
-}
-
-.pic .text {
-    z-index: 0;
 }
 
 .mystery {
