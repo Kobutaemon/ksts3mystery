@@ -11,6 +11,18 @@ function messageError() {
   }, 3000);
 }
 
+function drpProc() {
+  $(document).ready(function() {
+    $("#finish-pic").fadeIn(1000, function() {
+      $("#finish-pic").bxSlider({
+        auto: false,
+        infiniteLoop: false,
+        pager: false
+      });
+    });
+  })
+}
+
 window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
     switch (element.value.toLowerCase().replace(".","")) {
@@ -19,15 +31,7 @@ window.document.onkeydown = (e) => {
           break;
 
         case "drp":
-          $(document).ready(function() {
-            $("#finish-pic").fadeIn(1000, function() {
-              $("#finish-pic").bxSlider({
-                auto: false,
-                infiniteLoop: false,
-                pager: false
-              });
-            });
-          })
+          drpProc();
           break;
 
         default:
@@ -38,13 +42,13 @@ window.document.onkeydown = (e) => {
 }
 
 function check_word() {
-    switch (element.value.toLowerCase().replace(".","")) {
+    switch (element.value) {
         case "kst":
             alert("kst");
             break;
 
         case "drp":
-            alert("drp");
+            drpProc();
             break;
 
         default:
