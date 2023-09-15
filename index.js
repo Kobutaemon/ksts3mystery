@@ -14,7 +14,7 @@ function messageError() {
 function drpProc() {
   scrollTo(0, 0);
   $(document).ready(function() {
-    $("#finish-pic").fadeIn(1000)
+    $("#finish-pic").fadeIn(2000)
     $("#finish-pic").bxSlider({
       auto: false,
       infiniteLoop: false,
