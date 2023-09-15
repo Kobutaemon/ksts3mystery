@@ -5,7 +5,7 @@ let finish1a = document.getElementById("finish1a");
 
 function messageError() {
   message.classList.remove("d-none");
-  message.innerText = "認証失敗";
+  message.innerText = "パスコードが違います";
   setTimeout(function() {
     message.classList.add("d-none");
   }, 3000);
@@ -20,10 +20,8 @@ function drpProc() {
       infiniteLoop: false,
       pager: false
     });
-    
   });
 }
-
 
 window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
