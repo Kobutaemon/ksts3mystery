@@ -4,13 +4,15 @@
 }
 
 body {
-    overflow-y: hidden;
     background-color: black;
 }
 
 #finish-pic {
     display: none;
-    position: relative;
+}
+
+#finish-pic li {
+    height: 100%;
 }
 
 .pic {
