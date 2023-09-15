@@ -12,6 +12,9 @@ function messageError() {
 }
 
 function drpProc() {
+  $(".check_button").on("click",function(){
+    $(window).scrollTop(0);
+});
   $(document).ready(function() {
     $("#finish-pic").fadeIn(1000, function() {
       $("#finish-pic").bxSlider({
