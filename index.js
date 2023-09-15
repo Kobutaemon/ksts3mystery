@@ -25,12 +25,12 @@ function drpProc() {
 
 window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
-    switch (element.value.toLowerCase().replace(".","")) {
+    switch (element.value) {
         case "kst":
           alert("kst");
           break;
 
-        case "drp":
+        case "DR.P":
           drpProc();
           break;
 
