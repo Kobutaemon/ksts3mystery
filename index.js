@@ -11,6 +11,10 @@ function messageError() {
   }, 3000);
 }
 
+function closeKeyboard() {
+  $("#answer").blur();
+}
+
 function drpProc() {
   scrollTo(0, 0);
   $(document).ready(function() {
@@ -20,18 +24,22 @@ function drpProc() {
       infiniteLoop: false,
       pager: false
     });
+    
   });
 }
+
 
 window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
     switch (element.value) {
         case "kst":
           alert("kst");
+          $("#answer").blur();
           break;
 
         case "DR.P":
           drpProc();
+          $("#answer").blur();
           break;
 
         default:
@@ -45,10 +53,12 @@ function check_word() {
     switch (element.value) {
         case "kst":
             alert("kst");
+            $("#answer").blur();
             break;
 
         case "drp":
             drpProc();
+            $("#answer").blur();
             break;
 
         default:
