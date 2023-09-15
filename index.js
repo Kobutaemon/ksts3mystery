@@ -11,10 +11,6 @@ function messageError() {
   }, 3000);
 }
 
-function closeKeyboard() {
-  $("#answer").blur();
-}
-
 function drpProc() {
   scrollTo(0, 0);
   $(document).ready(function() {
