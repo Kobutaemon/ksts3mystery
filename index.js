@@ -52,7 +52,7 @@ function check_word() {
             $("#answer").blur();
             break;
 
-        case "drp":
+        case "DR.P":
             drpProc();
             $("#answer").blur();
             break;
