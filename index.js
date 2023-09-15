@@ -12,7 +12,7 @@ function messageError() {
 }
 
 function drpProc() {
-  $(window).scrollTop(0);
+  scrollTo(0, 0);
   $(document).ready(function() {
     $("#finish-pic").fadeIn(1000)
     $("#finish-pic").bxSlider({
