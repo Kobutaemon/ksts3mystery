@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+}
+
+.missileImg img {
+    width: 100%;
+    margin-top: 150px;
+}
+
+#missileButton {
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.missileButtons {
+    padding: 0 50px;
+}
+
+.missileImg {
+    position: relative;
+}
+
+#ex-mp4 { 
+    position: absolute;
+}

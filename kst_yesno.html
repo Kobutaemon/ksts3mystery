@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="missile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <title>Lauching Missile Confirm</title>
 </head>
 <body>
     <div class="missileImg">
-        <img src="kst_yesno.html">
+        <img src="kst_yesno.png">
+        <img src="expl.gif" id="ex-gif">
     </div>
+    <div id="missileButton">
+        <h1 id="missileYes" class="missileButtons" onclick="onYes()">YES</h1>
+        <h1 class="pipeLine">|</h1>
+        <h1 id="missileNo" class="missileButtons" onclick="onNo()">NO</h1>
+    </div>
+    <script src="kst_yesno.js"></script>
 </body>
 </html>
