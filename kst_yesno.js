@@ -1,6 +1,9 @@
-function onYes() {
+let exGif = document.getElementById("ex-gif");
+
+function buttonYes() {
+    console.log("できてはいる");
+    exGif.setAttribute("src", "expl.gif");
 }
 
-function onNo() {
-    console.log("no");
+function buttonNo() {
 }
