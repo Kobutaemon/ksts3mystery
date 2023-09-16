@@ -13,7 +13,7 @@ function messageError() {
 
 function kstProc() {
   nextMessage.innerText = "NEXT >";
-  $(".mystery").css("padding-top", "30%")
+  $(".mystery").css("padding-top", "50%")
   $(document).ready(function() {
     $("#finish-kstPic").fadeIn(2000);
     $("#finish-kstPic").bxSlider({
@@ -69,7 +69,7 @@ window.document.onkeydown = (e) => {
 
 function check_word() {
     switch (answer.value) {
-        case "KST ":
+        case "KST":
             kstProc();
             $("#answer").blur();
             break;
