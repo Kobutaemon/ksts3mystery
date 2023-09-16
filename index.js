@@ -1,7 +1,8 @@
 let element = document.getElementById("answer");
 let message = document.getElementById("message");
-let finishPic = document.getElementById("finish-pic");
-let finish1a = document.getElementById("finish1a");
+//let finishKstPic = document.getElementById("finish-kstPic");
+//let finishDrpPic = document.getElementById("finish-drpPic");
+//let finish1a = document.getElementById("finish1a");
 
 function messageError() {
   message.classList.remove("d-none");
@@ -11,11 +12,23 @@ function messageError() {
   }, 3000);
 }
 
+function kstProc() {
+  scrollTo(0, 0);
+  $(document).ready(function() {
+    $("#finish-kstPic").fadeIn(2000)
+    $("#finish-kstPic").bxSlider({
+      auto: false,
+      infiniteLoop: false,
+      pager: false
+    });
+  });
+}
+
 function drpProc() {
   scrollTo(0, 0);
   $(document).ready(function() {
-    $("#finish-pic").fadeIn(2000)
-    $("#finish-pic").bxSlider({
+    $("#finish-drpPic").fadeIn(2000)
+    $("#finish-drpPic").bxSlider({
       auto: false,
       infiniteLoop: false,
       pager: false
@@ -27,7 +40,7 @@ window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
     switch (element.value) {
         case "kst":
-          alert("kst");
+          kstProc();
           $("#answer").blur();
           break;
 
@@ -46,7 +59,7 @@ window.document.onkeydown = (e) => {
 function check_word() {
     switch (element.value) {
         case "kst":
-            alert("kst");
+            kstProc();
             $("#answer").blur();
             break;
 

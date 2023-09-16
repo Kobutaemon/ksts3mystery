@@ -12,18 +12,22 @@
     <title>M Y S T E R Y</title>
 </head>
 <body>
-    <div id="finish-pic">
+    <div id="finish-drpPic">
         <li><a href="finish1a.png" data-lightbox="group"><img src="finish1a.png" id="finish1a"></a></li>
         <li><a href="finish1b.png" data-lightbox="group"><img src="finish1b.png" id="finish1b"></a></li>
+    </div>
+    <div id="finish-kstPic">
+        <li><a href="finishkst2a.png" data-lightbox="group2"><img src="finishkst2a.png" id="finish2a"></a></li>
+        <li><a href="finishkst2b.png" data-lightbox="group2"><img src="finishkst2b.png" id="finish2b"></a></li>
     </div>
     <div class="pic"> 
         <img src="mystery_scr.png" class="mystery">
         <img src="arrow.png" class="arrow">
     </div>
+    <p id="message" class="d-none"></p>
     <form class="text" action="#">
         <input type="text" placeholder="パスコード入力欄" id="answer" autocomplete="off">
         <p id="check_button" onclick="check_word()">Check</p>
-        <p id="message" class="d-none"></p>
     </form>
     <script src="index.js"></script>
 </body>
