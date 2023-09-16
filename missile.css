@@ -47,6 +47,15 @@ body{
     height: 55vh;
     margin-top: 220px;
     margin-left: 10px;
+    position: relative;
+}
+
+#clearMessage {
+    color: white;
+    font-family: "超極細ゴシック";
+    position: absolute;
+    bottom: 250px;
+    left: 40%;
 }
 
 .d-none {
