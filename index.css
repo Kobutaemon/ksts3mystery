@@ -16,6 +16,10 @@ body {
     display: none;
 }
 
+#finish-2a{
+    height: fit-content;
+}
+
 #next-button {
     cursor: pointer;
     text-align: center;
