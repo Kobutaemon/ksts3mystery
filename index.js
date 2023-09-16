@@ -23,20 +23,7 @@ function kstProc() {
   });
 }
 
-function nextButton() {
-  switch (answer.value) {
-    case "KST":
-      document.location.assign("kst_yesno.html");
-      break;
-
-      default:
-        break;
-
-  }
-}
-
 function drpProc() {
-  nextMessage.innerText = "NEXT";
   scrollTo(0, 0);
   $(document).ready(function() {
     $("#finish-drpPic").fadeIn(2000)
@@ -46,6 +33,17 @@ function drpProc() {
       pager: false
     });
   });
+}
+
+function nextButton() {
+  switch (answer.value) {
+    case "KST":
+      document.location.assign("kst_yesno.html");
+      break;
+
+      default:
+        break;
+  }
 }
 
 window.document.onkeydown = (e) => {
