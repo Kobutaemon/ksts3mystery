@@ -2,6 +2,10 @@ body{
     background-color: black;
 }
 
+.missileImg {
+    position: relative;
+}
+
 .missileImg img {
     width: 100%;
     margin-top: 150px;
@@ -18,10 +22,10 @@ body{
     padding: 0 50px;
 }
 
-.missileImg {
-    position: relative;
-}
-
-#ex-mp4 { 
+#ex-gif { 
     position: absolute;
+    left: 0;
+    width: 10%;
+    top: 35%;
+    left: 49%;
 }
