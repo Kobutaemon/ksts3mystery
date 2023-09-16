@@ -4,7 +4,7 @@
 }
 
 body {
-    overflow: hidden;
+    /*overflow: hidden;*/
     background-color: black;
 }
 
@@ -75,4 +75,9 @@ body {
 #message {
     text-align: center;
     color: rgb(255, 110, 110);
+}
+
+#next-button {
+    font-family: "超極細ゴシック";
+    color: white;
 }

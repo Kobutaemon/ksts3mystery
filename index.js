@@ -1,5 +1,6 @@
 let element = document.getElementById("answer");
 let message = document.getElementById("message");
+let nextMessage = document.getElementById("netx-button");
 //let finishKstPic = document.getElementById("finish-kstPic");
 //let finishDrpPic = document.getElementById("finish-drpPic");
 //let finish1a = document.getElementById("finish1a");
@@ -36,10 +37,15 @@ function drpProc() {
   });
 }
 
+function nextButton() {
+  nextButton.classList.remove('d-none');
+  nextButton.innerText('NEXT');
+}
+
 window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
     switch (element.value) {
-        case "kst":
+        case "KST":
           kstProc();
           $("#answer").blur();
           break;
@@ -58,7 +64,7 @@ window.document.onkeydown = (e) => {
 
 function check_word() {
     switch (element.value) {
-        case "kst":
+        case "KST ":
             kstProc();
             $("#answer").blur();
             break;
