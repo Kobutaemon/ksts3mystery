@@ -1,12 +1,10 @@
 let element = document.getElementById("answer");
 let message = document.getElementById("message");
-let nextMessage = document.getElementById("netx-button");
+let nextMessage = document.getElementById("next-button");
 let finishKstPic = document.getElementById("finish-kstPic");
 let finishDrpPic = document.getElementById("finish-drpPic");
-//let finish1a = document.getElementById("finish1a");
 
 function messageError() {
-  message.classList.remove("d-none");
   message.innerText = "パスコードが違います";
   setTimeout(function() {
     message.classList.add("d-none");
@@ -14,10 +12,9 @@ function messageError() {
 }
 
 function kstProc() {
-  finishDrpPic.classList.add('d-none');
-  scrollTo(0, 0);
+  nextMessage.innerText = "NEXT";
   $(document).ready(function() {
-    $("#finish-kstPic").fadeIn(2000)
+    $("#finish-kstPic").fadeIn(2000);
     $("#finish-kstPic").bxSlider({
       auto: false,
       infiniteLoop: false,
@@ -27,7 +24,7 @@ function kstProc() {
 }
 
 function drpProc() {
-  finishKstPic.classList.add('d-none');
+  nextMessage.innerText = "NEXT";
   scrollTo(0, 0);
   $(document).ready(function() {
     $("#finish-drpPic").fadeIn(2000)
@@ -37,11 +34,6 @@ function drpProc() {
       pager: false
     });
   });
-}
-
-function nextButton() {
-  nextButton.classList.remove('d-none');
-  nextButton.innerText('NEXT');
 }
 
 window.document.onkeydown = (e) => {
