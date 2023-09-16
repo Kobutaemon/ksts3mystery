@@ -18,6 +18,9 @@ function buttonYes() {
 function buttonNo() {
     $("#clearPic").attr("src", "src/clearB.png");
     $("#clearPic").fadeIn(2000);
+    setTimeout(function() {
+        $("#glassBreak").removeClass("d-none");
+    },3000)
 }
 
 function goTop() {
