@@ -13,7 +13,7 @@ function messageError() {
 
 function kstProc() {
   nextMessage.innerText = "NEXT >";
-  $(".mystery").css("padding-top", "50%")
+  $(".mystery").css("padding-top", "30%")
   $(document).ready(function() {
     $("#finish-kstPic").fadeIn(2000);
     $("#finish-kstPic").bxSlider({
@@ -27,7 +27,6 @@ function kstProc() {
 function drpProc() {
   scrollTo(0, 0);
   nextMessage.innerText = "TOP >"
-  $(".mystery").css("padding-top", "50%")
   $(document).ready(function() {
     $("#finish-drpPic").fadeIn(2000)
     $("#finish-drpPic").bxSlider({
