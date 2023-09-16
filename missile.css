@@ -1,5 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-color: black;
+    overflow: hidden;
 }
 
 .missileImg {
@@ -28,4 +34,21 @@ body{
     width: 10%;
     top: 35%;
     left: 49%;
+}
+
+#yesPic{
+    width: 100%;
+}
+
+#yesPic img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+    margin-top: 220px;
+    margin-left: 10px;
+}
+
+.d-none {
+    display: none;
 }
