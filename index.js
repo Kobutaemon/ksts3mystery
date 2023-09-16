@@ -5,9 +5,9 @@ let finishKstPic = document.getElementById("finish-kstPic");
 let finishDrpPic = document.getElementById("finish-drpPic");
 
 function messageError() {
-  message.innerText = "パスコードが違います";
+  $("#message").removeClass("d-none");
   setTimeout(function() {
-    message.classList.add("d-none");
+    $("#message").addClass("d-none");
   }, 3000);
 }
 
@@ -26,6 +26,8 @@ function kstProc() {
 
 function drpProc() {
   scrollTo(0, 0);
+  nextMessage.innerText = "TOP >"
+  $(".mystery").css("padding-top", "50%")
   $(document).ready(function() {
     $("#finish-drpPic").fadeIn(2000)
     $("#finish-drpPic").bxSlider({
@@ -40,6 +42,10 @@ function nextButton() {
   switch (answer.value) {
     case "KST":
       document.location.assign("kst_yesno.html");
+      break;
+
+    case "DR.P":
+      document.location.assign("index.html");
       break;
 
       default:
