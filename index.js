@@ -12,7 +12,8 @@ function messageError() {
 }
 
 function kstProc() {
-  nextMessage.innerText = "NEXT";
+  nextMessage.innerText = "NEXT >";
+  $(".mystery").css("padding-top", "30%")
   $(document).ready(function() {
     $("#finish-kstPic").fadeIn(2000);
     $("#finish-kstPic").bxSlider({
