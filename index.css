@@ -8,12 +8,18 @@ body {
     background-color: black;
 }
 
+#finish-kstPic {
+    display: none;
+}
+
 #finish-drpPic{
     display: none;
 }
 
-#finish-kstPic {
-    display: none;
+#next-button {
+    cursor: pointer;
+    text-align: center;
+    font-size: 50px;
 }
 
 .pic {

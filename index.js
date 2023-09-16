@@ -1,4 +1,4 @@
-let element = document.getElementById("answer");
+let answer = document.getElementById("answer");
 let message = document.getElementById("message");
 let nextMessage = document.getElementById("next-button");
 let finishKstPic = document.getElementById("finish-kstPic");
@@ -23,6 +23,19 @@ function kstProc() {
   });
 }
 
+function nextButton() {
+  console.log("うんこ")
+  switch (answer.value) {
+    case "KST":
+      document.location.assign("kst_yesno.html");
+      break;
+
+      default:
+        break;
+
+  }
+}
+
 function drpProc() {
   nextMessage.innerText = "NEXT";
   scrollTo(0, 0);
@@ -38,7 +51,7 @@ function drpProc() {
 
 window.document.onkeydown = (e) => {
   if (e.keyCode === 13) {
-    switch (element.value) {
+    switch (answer.value) {
         case "KST":
           kstProc();
           $("#answer").blur();
@@ -57,7 +70,7 @@ window.document.onkeydown = (e) => {
 }
 
 function check_word() {
-    switch (element.value) {
+    switch (answer.value) {
         case "KST ":
             kstProc();
             $("#answer").blur();
