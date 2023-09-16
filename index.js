@@ -24,7 +24,6 @@ function kstProc() {
 }
 
 function nextButton() {
-  console.log("うんこ")
   switch (answer.value) {
     case "KST":
       document.location.assign("kst_yesno.html");

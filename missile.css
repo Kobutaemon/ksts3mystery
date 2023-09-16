@@ -5,7 +5,6 @@
 
 body{
     background-color: black;
-    overflow: hidden;
 }
 
 .missileImg {
@@ -36,11 +35,11 @@ body{
     left: 49%;
 }
 
-#yesPic{
+#pic{
     width: 100%;
 }
 
-#yesPic img{
+#pic img{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;

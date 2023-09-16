@@ -7,23 +7,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <title>Lauching Missile Confirm</title>
 </head>
 <body>
-    <div id="yesPic" class="d-none">
-        <img src="clearA.png">
+    <div id="pic">
+        <img src="" id="clearPic" class="d-none">
     </div>
-    <div class="missileImg">
-        <img src="kst_yesno.png">
-        <img id="ex-gif" class="freeze-gif">
-    </div>
-    <div id="missileButton">
-        <h1 id="missileYes" class="missileButtons" onclick="buttonYes()">YES</h1>
-        <h1 class="pipeLine">|</h1>
-        <h1 id="missileNo" class="missileButtons" onclick="buttonNo()">NO</h1>
+    <div id="missileAll">
+        <div class="missileImg">
+            <img src="kst_yesno.png">
+            <img id="ex-gif" class="freeze-gif">
+        </div>
+        <div id="missileButton">
+            <h1 id="missileYes" class="missileButtons" onclick="buttonYes()">YES</h1>
+            <h1 class="pipeLine">|</h1>
+            <h1 id="missileNo" class="missileButtons" onclick="buttonNo()">NO</h1>
+        </div>
     </div>
     <script src="kst_yesno.js"></script>
 </body>
